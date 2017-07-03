@@ -1,0 +1,10 @@
+.counter-wrapper
+	%h1 Counter
+	%form.counter.form-inline
+		.form-group
+			%button.btn.btn-default#increment Aumentar
+			%input.form-control#inputCounter{ name:'counter', type:'number', value: 0, disabled: true }
+			%button.btn.btn-default#decrement Disminuir
+
+= stylesheet_pack_tag 'counter'
+= javascript_pack_tag 'counter'
